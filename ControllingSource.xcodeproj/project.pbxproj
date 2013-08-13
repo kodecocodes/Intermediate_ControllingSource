@@ -16,8 +16,8 @@
 		55E52A5E17B9B15800088960 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E52A5D17B9B15800088960 /* AppDelegate.m */; };
 		55E52A6117B9B15800088960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55E52A5F17B9B15800088960 /* Main.storyboard */; };
 		55E52A6417B9B15800088960 /* ControllingSource.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55E52A6217B9B15800088960 /* ControllingSource.xcdatamodeld */; };
-		55E52A6717B9B15800088960 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E52A6617B9B15800088960 /* MasterViewController.m */; };
-		55E52A6A17B9B15800088960 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E52A6917B9B15800088960 /* DetailViewController.m */; };
+		55E52A6717B9B15800088960 /* QuotesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E52A6617B9B15800088960 /* QuotesListViewController.m */; };
+		55E52A6A17B9B15800088960 /* QuotesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E52A6917B9B15800088960 /* QuotesDetailViewController.m */; };
 		55E52A6C17B9B15800088960 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55E52A6B17B9B15800088960 /* Images.xcassets */; };
 		55E52A7317B9B15900088960 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E52A7217B9B15900088960 /* XCTest.framework */; };
 		55E52A7417B9B15900088960 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E52A4B17B9B15800088960 /* Foundation.framework */; };
@@ -51,10 +51,10 @@
 		55E52A5D17B9B15800088960 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		55E52A6017B9B15800088960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55E52A6317B9B15800088960 /* ControllingSource.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ControllingSource.xcdatamodel; sourceTree = "<group>"; };
-		55E52A6517B9B15800088960 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		55E52A6617B9B15800088960 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		55E52A6817B9B15800088960 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		55E52A6917B9B15800088960 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		55E52A6517B9B15800088960 /* QuotesListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuotesListViewController.h; sourceTree = "<group>"; };
+		55E52A6617B9B15800088960 /* QuotesListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuotesListViewController.m; sourceTree = "<group>"; };
+		55E52A6817B9B15800088960 /* QuotesDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuotesDetailViewController.h; sourceTree = "<group>"; };
+		55E52A6917B9B15800088960 /* QuotesDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuotesDetailViewController.m; sourceTree = "<group>"; };
 		55E52A6B17B9B15800088960 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		55E52A7117B9B15900088960 /* ControllingSourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControllingSourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E52A7217B9B15900088960 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -174,10 +174,10 @@
 		55E52A8A17B9B17400088960 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				55E52A6817B9B15800088960 /* DetailViewController.h */,
-				55E52A6917B9B15800088960 /* DetailViewController.m */,
-				55E52A6517B9B15800088960 /* MasterViewController.h */,
-				55E52A6617B9B15800088960 /* MasterViewController.m */,
+				55E52A6817B9B15800088960 /* QuotesDetailViewController.h */,
+				55E52A6917B9B15800088960 /* QuotesDetailViewController.m */,
+				55E52A6517B9B15800088960 /* QuotesListViewController.h */,
+				55E52A6617B9B15800088960 /* QuotesListViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -279,8 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55E52A6A17B9B15800088960 /* DetailViewController.m in Sources */,
-				55E52A6717B9B15800088960 /* MasterViewController.m in Sources */,
+				55E52A6A17B9B15800088960 /* QuotesDetailViewController.m in Sources */,
+				55E52A6717B9B15800088960 /* QuotesListViewController.m in Sources */,
 				55E52A6417B9B15800088960 /* ControllingSource.xcdatamodeld in Sources */,
 				55E52A5E17B9B15800088960 /* AppDelegate.m in Sources */,
 				55E52A5A17B9B15800088960 /* main.m in Sources */,
@@ -486,6 +486,7 @@
 				55E52A8517B9B15900088960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55E52A8617B9B15900088960 /* Build configuration list for PBXNativeTarget "ControllingSourceTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +495,7 @@
 				55E52A8817B9B15900088960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

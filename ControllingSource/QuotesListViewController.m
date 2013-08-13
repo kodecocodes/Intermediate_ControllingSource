@@ -1,19 +1,19 @@
 //
-//  MasterViewController.m
+//  QuotesListViewController.m
 //  ControllingSource
 //
 //  Created by Felipe on 8/10/13.
 //  Copyright (c) 2013 Felipe Laso Marsetti. All rights reserved.
 //
 
-#import "DetailViewController.h"
-#import "MasterViewController.h"
+#import "QuotesDetailViewController.h"
+#import "QuotesListViewController.h"
 
-@interface MasterViewController () <NSFetchedResultsControllerDelegate>
+@interface QuotesListViewController () <NSFetchedResultsControllerDelegate>
 
 @end
 
-@implementation MasterViewController
+@implementation QuotesListViewController
 
 #pragma mark - Fetched Results Controller Delegate
 

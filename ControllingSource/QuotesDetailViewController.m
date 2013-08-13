@@ -1,14 +1,14 @@
 //
-//  DetailViewController.m
+//  QuotesDetailViewController.m
 //  ControllingSource
 //
 //  Created by Felipe on 8/10/13.
 //  Copyright (c) 2013 Felipe Laso Marsetti. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "QuotesDetailViewController.h"
 
-@implementation DetailViewController
+@implementation QuotesDetailViewController
 
 #pragma mark - Private Methods
 

@@ -1,5 +1,5 @@
 //
-//  DetailViewController.h
+//  QuotesDetailViewController.h
 //  ControllingSource
 //
 //  Created by Felipe on 8/10/13.
@@ -7,7 +7,7 @@
 //
 
 
-@interface DetailViewController : UIViewController
+@interface QuotesDetailViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @property (strong, nonatomic) id detailItem;
