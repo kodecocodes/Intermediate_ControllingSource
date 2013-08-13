@@ -8,18 +8,21 @@
 
 #import "QuotesDetailViewController.h"
 
+@interface QuotesDetailViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *famousQuoteLabel;
+@property (weak, nonatomic) IBOutlet UILabel *personNameLabel;
+
+@end
+
 @implementation QuotesDetailViewController
 
 #pragma mark - Private Methods
 
 - (void)configureView
 {
-    // Update the user interface for the detail item.
-    
-    if (self.detailItem)
-    {
-        self.detailDescriptionLabel.text = [self.detailItem valueForKey:@"famousQuote"];
-    }
+    self.famousQuoteLabel.text = [self.detailItem valueForKey:@"famousQuote"];
+    self.personNameLabel.text = [self.detailItem valueForKey:@"personName"];
 }
 
 #pragma mark - Properties
