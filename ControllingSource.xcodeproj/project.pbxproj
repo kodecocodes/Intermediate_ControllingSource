@@ -61,6 +61,7 @@
 		55E52A7B17B9B15900088960 /* ControllingSourceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ControllingSourceTests-Info.plist"; sourceTree = "<group>"; };
 		55E52A7D17B9B15900088960 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		55E52A7F17B9B15900088960 /* ControllingSourceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControllingSourceTests.m; sourceTree = "<group>"; };
+		55E52A8B17B9B35F00088960 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +168,7 @@
 				55E52A6217B9B15800088960 /* ControllingSource.xcdatamodeld */,
 				55E52A6B17B9B15800088960 /* Images.xcassets */,
 				55E52A5F17B9B15800088960 /* Main.storyboard */,
+				55E52A8B17B9B35F00088960 /* README.md */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
