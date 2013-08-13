@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>personName</key>
+		<string>Martin Luther King, Jr.</string>
+		<key>famousQuote</key>
+		<string>&quot;Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Dalai Lama</string>
+		<key>famousQuote</key>
+		<string>&quot;Old friends pass away, new friends appear. It is just like the days. An old day passes, a new day arrives. The important thing is to make it meaningful: a meaningful friend - or a meaningful day.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Buddha</string>
+		<key>famousQuote</key>
+		<string>&quot;You can search throughout the entire universe for someone who is more deserving of your love and affection than you are yourself, and that person is not to be found anywhere. You yourself, as much as anybody in the entire universe deserve your love and affection.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Buddha</string>
+		<key>famousQuote</key>
+		<string>&quot;It is better to conquer yourself than to win a thousand battles. Then the victory is yours. It cannot be taken from you, not by angels or by demons, heaven or hell.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Dalai Lama</string>
+		<key>famousQuote</key>
+		<string>&quot;It is very important to generate a good attitude, a good heart, as much as possible. From this, happiness in both the short term and the long term for both yourself and others will come.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Martin Luther King, Jr.</string>
+		<key>famousQuote</key>
+		<string>&quot;We must develop and maintain the capacity to forgive. He who is devoid of the power to forgive is devoid of the power to love. There is some good in the worst of us and some evil in the best of us. When we discover this, we are less prone to hate our enemies.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Mark Twain</string>
+		<key>famousQuote</key>
+		<string>&quot;Whenever you find yourself on the side of the majority, it is time to pause and reflect.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Steve Jobs</string>
+		<key>famousQuote</key>
+		<string>&quot;Here’s to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They’re not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can’t do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Steve Jobs</string>
+		<key>famousQuote</key>
+		<string>&quot;You can’t connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future. You have to trust in something – your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Paramahansa Yogananda</string>
+		<key>famousQuote</key>
+		<string>&quot;Be as simple as you can be; you will be astonished to see how uncomplicated and happy your life can become.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Paramanahsa Yogananda</string>
+		<key>famousQuote</key>
+		<string>&quot;Live each moment completely and the future will take care of itself. Fully enjoy the wonder and beauty of each moment.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Paramahansa Yogananda</string>
+		<key>famousQuote</key>
+		<string>&quot;You must not let your life run in the ordinary way; do something that nobody else has done, something that will dazzle the world. Show that God&apos;s creative principle works in you.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Paramahansa Yogananda</string>
+		<key>famousQuote</key>
+		<string>&quot;There is a magnet in your heart that will attract true friends. That magnet is unselfishness, thinking of others first; when you learn to live for others, they will live for you.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Albert Schweitzer</string>
+		<key>famousQuote</key>
+		<string>&quot;Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Paramahansa Yogananda</string>
+		<key>famousQuote</key>
+		<string>&quot;Be afraid of nothing. Hating none, giving love to all, feeling the love of God, seeing His presence in everyone, and having but one desire - for His constant presence in the temple of your consciousness - that is the way to live in this world.&quot;</string>
+	</dict>
+	<dict>
+		<key>personName</key>
+		<string>Mother Teresa</string>
+		<key>famousQuote</key>
+		<string>&quot;We think sometimes that poverty is only being hungry, naked and homeless. The poverty of being unwanted, unloved and uncared for is the greatest poverty. We must start in our own homes to remedy this kind of poverty.&quot;</string>
+	</dict>
+</array>
+</plist>
