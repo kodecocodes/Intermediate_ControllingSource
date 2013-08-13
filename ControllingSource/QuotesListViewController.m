@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Felipe Laso Marsetti. All rights reserved.
 //
 
+#import "Quote.h"
 #import "QuotesDetailViewController.h"
 #import "QuotesListViewController.h"
 
@@ -75,17 +76,17 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [object valueForKey:@"famousQuote"];
+    Quote *quote = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = quote.famousQuote;
 }
 
 - (void)insertNewObject:(id)sender
 {
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
+    Quote *newQuote = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
     
-    [newManagedObject setValue:@"This should be a famous quote" forKey:@"famousQuote"];
+    newQuote.famousQuote = @"This should be a famous quote";
     
     NSError *error = nil;
     
@@ -196,8 +197,8 @@
     if ([[segue identifier] isEqualToString:@"showDetail"])
     {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-        [[segue destinationViewController] setDetailItem:object];
+        Quote *quote = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+        [[segue destinationViewController] setQuote:quote];
     }
 }
 

@@ -6,8 +6,10 @@
 //  Copyright (c) 2013 Felipe Laso Marsetti. All rights reserved.
 //
 
+@class Quote;
+
 @interface QuotesDetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) Quote *quote;
 
 @end

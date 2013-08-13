@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Felipe Laso Marsetti. All rights reserved.
 //
 
+#import "Quote.h"
 #import "QuotesDetailViewController.h"
 
 @interface QuotesDetailViewController ()
@@ -21,17 +22,17 @@
 
 - (void)configureView
 {
-    self.famousQuoteLabel.text = [self.detailItem valueForKey:@"famousQuote"];
-    self.personNameLabel.text = [self.detailItem valueForKey:@"personName"];
+    self.famousQuoteLabel.text = self.quote.famousQuote;
+    self.personNameLabel.text = self.quote.personName;
 }
 
 #pragma mark - Properties
 
-- (void)setDetailItem:(id)newDetailItem
+- (void)setQuote:(Quote *)quote
 {
-    if (_detailItem != newDetailItem)
+    if (_quote != quote)
     {
-        _detailItem = newDetailItem;
+        _quote = quote;
         
         [self configureView];
     }
