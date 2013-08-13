@@ -18,7 +18,7 @@
     
     if (self.detailItem)
     {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+        self.detailDescriptionLabel.text = [self.detailItem valueForKey:@"famousQuote"];
     }
 }
 
