@@ -1,19 +1,20 @@
 //
-//  MasterViewController.m
+//  QuotesListViewController.m
 //  ControllingSource
 //
 //  Created by Felipe on 8/10/13.
 //  Copyright (c) 2013 Felipe Laso Marsetti. All rights reserved.
 //
 
-#import "DetailViewController.h"
-#import "MasterViewController.h"
+#import "Quote.h"
+#import "QuotesDetailViewController.h"
+#import "QuotesListViewController.h"
 
-@interface MasterViewController () <NSFetchedResultsControllerDelegate>
+@interface QuotesListViewController () <NSFetchedResultsControllerDelegate>
 
 @end
 
-@implementation MasterViewController
+@implementation QuotesListViewController
 
 #pragma mark - Fetched Results Controller Delegate
 
@@ -75,17 +76,17 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
+    Quote *quote = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = quote.famousQuote;
 }
 
 - (void)insertNewObject:(id)sender
 {
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
+    Quote *newQuote = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
     
-    [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
+    newQuote.famousQuote = @"This should be a famous quote";
     
     NSError *error = nil;
     
@@ -107,14 +108,14 @@
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Quote" inManagedObjectContext:self.managedObjectContext];
     [fetchRequest setEntity:entity];
     
     // Set the batch size to a suitable number.
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timeStamp" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"famousQuote" ascending:NO];
     NSArray *sortDescriptors = @[sortDescriptor];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
@@ -161,6 +162,7 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
+    
     return cell;
 }
 
@@ -195,8 +197,8 @@
     if ([[segue identifier] isEqualToString:@"showDetail"])
     {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-        [[segue destinationViewController] setDetailItem:object];
+        Quote *quote = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+        [[segue destinationViewController] setQuote:quote];
     }
 }
 
